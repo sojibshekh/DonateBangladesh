@@ -49,7 +49,7 @@
                     <div class="navbar-end">
                     <div class="flex">
                         <img src="img/coin.png" alt="">
-                        <h2 class="px-2"> <span>5400</span> BDT</h2>
+                        <h2 class="px-2"> <span id="net-balance">5400</span> BDT</h2>
                     </div>
                     </div>
                   </div>
@@ -60,13 +60,13 @@
     <section id="main"> 
        <div class="container mx-auto px-3">
          <div class="text-center pt-10">
-            <button class=" btn bg-active mx-5">Donation</button>
-            <button class="btn">History</button>
+            <button class=" btn bg-active mx-5" id="donation-btn">Donation</button>
+            <button class="btn" id="history-btn">History</button>
          </div>
        </div>
 
        <div class="container mx-auto px-3">
-           <div class="blogs">
+           <div class="blogs" id="campaign">
             <div class="pt-10">
                 <div class="hero border  border-base-200 rounded-lg">
                     <div class="hero-content flex-col lg:flex-row">
@@ -75,14 +75,14 @@
                       <div>
                         <div class="flex bg-base-200 w-fit p-2 rounded-lg ">
                             <img src="img/coin.png" alt="">
-                            <h4 class="px-2"><span>5500</span> BDT</h4>
+                            <h4 class="px-2"><span id="campaign-all-amount-1">0</span> BDT</h4>
                         </div>
-                        <h1 class="text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+                        <h1 class="text-xl font-bold" id="campain-title-1">Donate for Flood at Noakhali, Bangladesh</h1>
                         <p class="py-2">
                             The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
                         </p>
-                        <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full  block">
-                        <button class="btn bg-active w-full mt-3">Donate Now</button>
+                        <input type="text"id="donate-input-1"  placeholder="Write Donation Amount" class="input input-bordered w-full  block">
+                        <button class="btn bg-active w-full mt-3" id="donate-btn-1">Donate Now</button>
                       </div>
                     </div>
                   </div>
@@ -122,22 +122,42 @@
                             The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
                         </p>
                         <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full  block">
-                        <button class="btn bg-active w-full mt-3">Donate Now</button>
+                        <button class="btn bg-active w-full mt-3" id="">Donate Now</button>
                       </div>
                     </div>
                   </div>
             </div>
 
 
+          
+
+
+           </div>
+       </div>
+       <div class="container mx-auto px-3">
+           <div id="all-history" >
+            
            </div>
        </div>
        
     </section>
 
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+          <h3 class="text-lg font-bold">Hello!</h3>
+          <p class="py-4">Press ESC key or click the button below to close</p>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
 
-
-   
+   <script src="js/utility.js"></script>
   
-    
+    <script src="js/main.js"></script>
+    <script src="js/tab.js"></script>
 </body>
 </html>
