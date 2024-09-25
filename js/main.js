@@ -115,3 +115,8 @@ document.getElementById('donate-btn-3').addEventListener('click',function(event)
    
    
    })
+
+
+
+//    Blog page event handeler 
+
