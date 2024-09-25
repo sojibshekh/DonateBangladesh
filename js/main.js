@@ -11,7 +11,10 @@ document.getElementById('donate-btn-1').addEventListener('click',function(event)
     alert('Please Donate a taka');
     return;
   }
-
+   if(0>=donateAmount){
+       alert('Please Donate a + taka');
+       return;
+   }
    if(balance < donateAmount){
     alert("your balance is insufficient");
     return;
@@ -51,6 +54,10 @@ document.getElementById('donate-btn-2').addEventListener('click',function(event)
        alert('Please Donate a taka');
        return;
      }
+     if(0>=donateAmount){
+       alert('Please Donate a + taka');
+       return;
+   }
    
       if(balance < donateAmount){
        alert("your balance is insufficient");
@@ -92,6 +99,10 @@ document.getElementById('donate-btn-3').addEventListener('click',function(event)
        alert('Please Donate a taka');
        return;
      }
+     if(0>=donateAmount){
+       alert('Please Donate a + taka');
+       return;
+   }
    
       if(balance < donateAmount){
        alert("your balance is insufficient");
